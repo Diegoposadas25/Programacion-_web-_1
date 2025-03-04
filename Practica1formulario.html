@@ -54,7 +54,7 @@ parcial 2 practica 1-->
                             <input type="password" name="pass" id="pass" placeholder="Contraseña" size="20" maxlength="30"title="Contraseña">
                         </td>
                         <td>
-                            <label for="fechanac" style="color: white;">Fecha de nacimiento</label>
+                            <label for="fechanac" style="color: white;">Fecha de registro</label>
                             <input type="date" name="fechanac" id="fechanac"placeholder="Fecha de nacimiento" size="20"title="Fecha de nacimiento">
                         </td>
                     </tr>
@@ -69,33 +69,29 @@ parcial 2 practica 1-->
                     <td>
                         <label for="pais" style="color: white;">País</label>
                             <select name="pais" id="pais">
-                                <optgroup label="pais">
-                                    <option selected>Mexico</option>
-                                    <option >Canada</option>
-                                    <option >Estados Unidos</option>
-                                    <option >Japon</option>
-                                    <option >China</option>
-                                    <option >Colombia</option>
-                                    <option >Chile</option>
-                                    <option >Brasil</option>
-                                    <option >Perú</option>
-                                </optgroup>
+                               <option value="1" selected>Mexico</option>
+                                <option value="2">Canada</option>
+                                <option value="3">Estados Unidos</option>
+                                <option value="4">Japon</option>
+                                <option value="5">China</option>
+                                <option value="6">Colombia</option>
+                                <option value="7">Chile</option>
+                                <option value="8">Brasil</option>
+                                <option value="9">Perú</option>
                             </select>
                     </td>
                     <td>
                         <label for="ciudad" style="color: white;">Ciudad</label>
                             <select name="ciudad" id="ciudad">
-                                <optgroup label="ciudad">
-                                    <option selected>San Luis Potosi</option>
-                                    <option >Cerritos</option>
-                                    <option >Nueva York</option>
-                                    <option >Tokio</option> 
-                                    <option >Paris</option>
-                                    <option >Bogota</option>
-                                    <option >Ciudad de Mexico</option>
-                                    <option >Berlin</option>
-                                    <option >Moscu</option>
-                                </optgroup>
+                                <option selected>San Luis Potosi</option>
+                                <option >Vancouver</option>
+                                <option >Nueva York</option>
+                                <option >Tokio</option> 
+                                <option >Pekin</option>
+                                <option >Bogota</option>
+                                <option >Santiago</option>
+                                <option >Rio</option>
+                                <option >Lima</option>
                             </select> 
                      </td>
                      <td>
@@ -114,7 +110,7 @@ parcial 2 practica 1-->
                    </td>  
                    <td>
                         <label for="correo" style="color: white;">E-mail</label>
-                        <input type="email" name="correo" id="correo"><br/>
+                        <input type="email" name="correo" id="correo"placeholder="E-mail" size="15" maxlength="10"title="E-mail"><br/>
                    </td>
                 </tr>
                 <tr>
@@ -132,7 +128,7 @@ parcial 2 practica 1-->
             <input type="checkbox" name="acepto" id="acepto" value="1">
             <label for="acepto" style="color: white;">Acepto terminos y condiciones</label>
             <input type="submit" name="enviar" id="enviar" value="Enviar"><!-- sirve para enviar el formulario-->
-            <input type="submit" name="reenviar" id="reenviar" value="Restablecer"></br><!-- sirve para enviar el formulario-->
+            <input type="reset" name="reenviar" id="reenviar" value="Restablecer"></br><!-- sirve para restablecer el formulario, el value es lo que dira el boton-->
         </fieldset>
     </form>
 
