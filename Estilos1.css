@@ -1,0 +1,28 @@
+body{
+	background-color: lightgray;
+
+}
+table{
+	width: 100%;
+	border: 2px solid brown;
+	border-collapse: collapse;/*se unen los 2 bordes tanto el de la 
+	tabla comoo el de las filas*/ 
+	caption-side: top; /*para que el titulo aparezca en la parte superior*/
+}
+td, th{
+	border: 2px solid brown;
+}
+table tr:nth-child(odd){ /*fondo par filas impares*/
+	background-color: white;
+}
+table tr:nth-child(even){ /*fondo par filas pares*/
+	background-color: coral;
+}
+table tr th{ /* aplica a todos los tr y th*/
+	background-color: red;
+	color: white; /* color de fuente*/
+}
+table tr:hover{
+	background-color: darkred;
+	color: white;
+}
