@@ -1,0 +1,170 @@
+.capa1{
+	margin-center: 25%;
+	padding: 12px;
+}
+ body{
+            background-image: url('BIMBO1.jpg');
+            background-size: 100% auto;  /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen para efecto parallax */
+            
+         }	
+.menu{
+	list-style-type: none; /*elima los estilos que tienen las listas como puntos o numeros*/
+	width: 60%; /* establece un acnho de 60%*/
+	max-width: 800px; /*limita el ancho a 800px*/
+	padding:0; /* no hay espacio adicional dentro de la lista*/
+	background-color: skyblue;
+	display: flex; /* hace que la lista sea horizontal*/
+	align-items: center;
+	margin: 20px auto; /* centra y agrega margen de 20px*/
+	/*position: fixed; para que siempre se vea la lista no imprte que te desplaces por la pantalla*/
+	/* la diferencia entre utilizar % y px es que en % se adpata a los tamaños de la pagina web y px es un tamaño fijo y no se adapta
+	al tamaño de la pagina*/
+}
+.menu li{
+	margin: 5px;
+ 	flex: 1 1 auto; /* Permite que los elementos se acomoden automáticamente */
+   text-align: center;
+}
+.menu li a{
+	background-color: skyblue; /* color de fondo*/
+	color: black; /* color de texto*/
+	display: block; /* permite que los elementos ocupen todo el ancho posible*/
+	padding: 16px; /* quitmos el margen para que esten juntos*/
+	text-decoration: none; /*elimina el subrayado prdeterimando de los enlaces*/
+	text-align: center;
+}
+.menu li a:hover{
+	background-color: orangered;
+	color: black;
+	display: block; /* permite que los elementos ocupen todo el ancho posible*/
+	padding: 16px; /* quitmos el margen para que esten juntos*/
+	text-decoration: none;  /*elimina el subrayado prdeterimando de los enlaces*/
+
+}
+.lista{
+    list-style-type: square; /* Muestra viñetas cuadradas */
+    padding-left: 20px;
+}
+
+.lista{
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
+
+h1{
+	font-family: "Crete Round", serif;
+}
+h2{
+	font-family: "Crete Round", serif;
+}
+h3{
+	font-family: "Crete Round", serif;
+}
+
+@font-face{
+	 font-family: "fuente 1";
+	 src: url("static/Roboto_Condensed-Light.ttf")
+	 format("truetype");
+}
+p{
+font-family: "fuente 1";
+font-size: 20px; /* aumenta o diminusye el tamaño de la letra*/
+text-align: justify;
+color: black;
+background-color: skyblue;
+}
+.tabla {
+    width: 80%;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    background-color: white;
+}
+
+.tabla th, td {
+    border: 2px solid black; /* Bordes más gruesos y unidos */
+    padding: 10px; /* Espaciado dentro de las celdas */
+    text-align: center;
+}
+
+.tabla th {
+    background-color: skyblue;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes */
+    background-color: white;
+}
+
+th, td {
+    border: 2px solid black; 
+    padding: 10px;
+ }
+
+textarea{
+		width: 100%;
+		height: 150px;
+		border: 2px solid lightgray;
+		border-radius: 4px; /* redonde esquinas de los elementos*/
+		box-sizing: border-box;/*todo loque agregamos se cotraiga y ocupe el mismo espacio*/
+		resize: none; /*el usuario no podra modificar el tamañao de la caja*/
+	}
+	input[type=text]{
+		width: 50%;
+		padding: 10px;
+		box-sizing:border-box;/*Asegura que width: 100% incluya el padding y el border en el cálculo total del tamaño.*/
+		border-radius: 4px; /*borde redodeado*/
+		margin: 5px;
+		line-height: 14px;/*alto de linea*/
+	}
+	select{
+		width: 100%;
+		padding: 14px;
+		border-radius: 4px;
+		font-size: 14px;
+}
+input[type=checkbox]{
+		width: 18px; /* Ajusta el tamaño */
+    height: 18px; /* Mantiene proporción */
+    margin-right: 10px; /* Espacio entre checkbox y texto */
+    vertical-align: middle; /* Alinea con el texto */
+}
+.checkbox-container {
+    text-align: left; /* Asegura que los elementos dentro estén alineados a la izquierda */
+}
+input[type=submit]{
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 4px;
+		border: 2px solid white;
+		font-size:16px; /* establece tamaño del texto*/
+	}input[type=submit]:hover{ /*al pasar el mouse cambiara e colorco hover*/
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 4px;
+		border: 2px solid white;
+		font-size:16px;
+		background-color: gray;
+		color: white;
+	}input[type=reset]{
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 4px;
+		border: 2px solid white;
+		font-size:16px;
+	}input[type=reset]:hover{
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 4px;
+		border: 2px solid white;
+		font-size:16px;
+		background-color: gray;
+		color: white;
