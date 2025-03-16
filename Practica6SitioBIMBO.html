@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+	<head>
+		<link rel="icon" href="img/imagen.jpg">
+		<meta http-equiv="content-type"	content="text/html;charset=utf-8"/>
+		<title>Practica 6 sitio web BIMBO</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		</style>
+		<link rel="stylesheet" type="text/css" href="BIMBO.css">
+	</head>
+	<body>
+		<h1 align="center">Sitio web BIMBO</h1>
+		
+	<section>
+	
+		<ul class="menu">
+			<li><a href="#inicio">
+				Inicio
+				</a>
+			</li>
+			<li><a href="#productos">
+				Productos
+				</a>
+			</li>
+			<li><a href="#Marcas">
+				Marcas
+				</a>
+			</li>
+			<li><a href="#Historia">
+				Historia
+				</a>
+			</li>
+			<li><a href="#encuesta">
+				Encuesta
+				</a>
+			</li>
+			<li><a href="#contactos">
+				Contacto
+				</a>
+			</li>
+		</ul>
+	
+	</section>
+	<div class="capa1">
+		
+	<section>
+		<h1 id="inicio">Quienes somos</h1>
+		<p>
+			
+			Grupo Bimbo es la empresa de panificación líder y más grande del mundo y un jugador relevante en snacks. Cuenta con 223 panaderías y otras plantas y más de 1,500 centros de ventas estratégicamente localizados en 35 países de América, Europa, Asia y África. Grupo Bimbo fabrica más de 9,000 productos y tiene una de las redes de distribución más grandes del mundo, con más de 58,000 rutas y más de 152,000 colaboradores.
+		</p>
+		<h2 id="productos">Productos</h2>
+			<ul class="lista">
+    			<li>Pan de molde</li>
+    			<li>Pan tostado</li>
+    			<li>Bollería y repostería</li>
+    			<li>Pan dulce</li>
+    			<li>Snacks y barras de cereal</li>
+    			<li>Tortillas</li>
+			</ul>
+		<h2 id="Marcas">Marcas</h2>
+	<table class="tabla">
+        <thead>
+            <tr> 
+                <th>Marcas</th>
+                <th>Productos de la marca</th>
+                <th>Año de fundacion</th>
+                <th>Imagenes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BIMBO</td>
+                <td>Panes blancos y pan tostado</td>
+                <td>1945</td>
+                <td>
+                	<img src="BIMBO2.jpg" alt="Logo de Bimbo" width="100">
+                </td>
+            </tr>
+            <tr>
+                <td>Marinela</td>
+                <td>Barritas, canelitas, choc roles, gansitos</td>
+                <td>1954</td>
+                <td>
+                	<img src="marinela.jpg" alt="Logo de Bimbo" width="100">
+                </td>
+            </tr>
+            <tr>
+                <td>Barcel</td>
+                <td>Chip's, Takis, Ondas, Runners, Chipotles, Big Mix</td>
+                <td>1978</td>
+                <td>
+                	<img src="Barcel.jpg" alt="Logo de Bimbo" width="100">
+                </td>
+            </tr>
+            <tr>
+                <td>Tia Rosa</td>
+                <td>Salmas Galletas Maiz Horneadas, Tia Rosa Bigotes Chocolate, Tia Rosa Mantecadas, Tia Rosa Tartinas Fresa</td>
+                <td>1974</td>
+                <td>
+                	<img src="Tia Rosa4.jpg" alt="Logo de Bimbo" width="100">
+                </td>
+            </tr>
+		</tbody>
+	</table>
+	<h3 id="Historia">Historia</h3>
+	<p>Panificación Bimbo inició operaciones el 2 de diciembre de 1945, la visión de sus creadores era “hacer un pan realmente bueno, nutritivo, sabroso, fresco… Hacerlo bien, con limpieza, con la mayor perfección, con la intención de nutrir, agradar y llegar así a todos los hogares de México”. 
+	</p>
+	<p>
+		Los fundadores de la empresa fueron Lorenzo Servitje, Jaime Jorba, Jaime Sendra. José T. Mata, Alfonso Velasco y Roberto Servitje. 
+		Al comienzo solo se elaboraban cuatro tipos de pan: Super-pan Bimbo, grande y chico, negro y tostado.
+	</p>
+	<h3 id="encuesta">Encuesta de satisfaccion</h3>	
+	<form method="post" action="" 
+	enctype="text/plain">
+		<table class="formulario">
+			<tbody>
+                    <tr>
+                        <td>
+							 <label for ="name" style="color: black;"> Nombre</label>
+                                <input type="text" name="name" id="name" placeholder="Nombre" size="25" maxlength="20" title="Nombre">
+						</td>
+						<td>
+							 <label for ="AP" style="color: black;">Apellido Paterno</label>
+                            	<input type="text" name="AP" id="AP" placeholder="Apellido Paterno" size="15" maxlength="20" title="Apellido Paterno" >
+						</td>
+						<td>
+							 <label for ="AM" style="color: black;">Apellido Materno</label>
+                            	<input type="text" name="AM" id="AM" placeholder="Apellido Materno" size="15" maxlength="20" title="Apellido Materno" >
+						</td>
+						<td>
+							<label for="numero" style="color: black;">Numero de telefono</label><!--es control-->
+                        		<input type="text" name="numero" id="numero" placeholder="Numero de telefono" size="15" maxlength="10"title="Numero de telefono">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="informacion">Del 1 al 10, te fue utili la informacion</label><br/>
+								<select name="informacion" id="informacion" size="10"/>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+								</select>
+						</td>
+						<td>
+							<label for="experiencia">Cuentanos tu experiencia en el sitio web</label><br/>
+								<select name="experiencia" id="experiencia" size="10"/>
+									<option>Excelente</option>
+									<option>Muy bien</option>
+									<option>Bien</option>
+									<option>Regular</option>
+									<option>Mal</option>
+						</td>
+						<td>
+							<label for="producto">Cual es tu producto de BIMBO favorito</label><br/>
+								<fieldset class="checkbox-container">
+									<input type="checkbox"/>Pan blanco<br/>
+									<input type="checkbox"/>Pan tostado<br/>
+									<input type="checkbox"/>Donas<br/>
+									<input type="checkbox"/>Roles<br/>
+									<input type="checkbox"/>Mantecadas<br/>
+									<input type="checkbox"/>Pan dulce tradicional<br/>
+								</fieldset>
+						</td>  
+						<td>
+							<label for="comentarios">Sugerencias:</label>
+							<textarea name="comentarios" id="comentarios"></textarea>
+						</td>
+					</tr>
+			</tbody>
+		</table>
+			<input type="submit" name="enviar" id="enviar" value="Enviar"><!-- sirve para enviar el formulario-->
+            <input type="reset" name="reenviar" id="reenviar" value="Restablecer"></br>
+        </form>
+	<h4 id="contactos">Contactos</h4>
+	<ul>
+		<li><a href="https://www.facebook.com/GrupoBimbo" target="_black">Facebook</a></li>
+		<li><a href="https://x.com/Grupo_Bimbo" target="_black">X</a></li>
+		<li><a href="https://www.instagram.com/grupo_bimbo/" target="_black">Instagram</a></li>
+	</ul>
+	</section>
+	</div>
+		<footer>
+			<h4>BIMBO San Luis Potosí</h4>
+			<address>78395, Eje 128 209, Industrial San Luis, San Luis Potosí, S.L.P.</address>
+		</footer>
+	</body>
+</html>
