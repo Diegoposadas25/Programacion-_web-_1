@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--desarrollado por Hernández Posadas Diego Ángel 
+Fecha: 01/03/25
+parcial 2 practica 1-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 parcial 1</title>
+    <style>
+            body{
+            background-image: url('paisaje4.jpg');
+            background-size: 100% auto;  /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen para efecto parallax */
+            
+         }
+</style>
+            
+</head>
+<body>
+
+    <h1 style="text-align: center;">Walmart</h1>
+    <h2 style="text-align: center;">Comparas online</h2>
+    <form action="" method="post" enctype="text/plain">
+        <!-- agrupar controles de formulario -->
+        <fieldset> <!-- pone un recuadro-->
+            <legend style="color: white;">Información general del cliente</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                             <label for ="name" style="color: white;"> Nombre</label>
+                                <input type="text" name="name" id="name" placeholder="Nombre" size="25" maxlength="20" title="Nombre">
+                                <!-- el size es el ancho del cuadro, maxlength sirve para que no pase el nombre de usarioo de 30 caracteres, title nombre nos pone una leyenda nombre de usuario, readonly es para que sea de solo lectura, label enlazamos un titulo, placeholder pone en el recuadro lo que hayamos puesto-->
+                        </td>
+                        <td>
+                            <label for ="AP" style="color: white;">Apellido Paterno</label>
+                            <input type="text" name="AP" id="AP" placeholder="Apellido Paterno" size="15" maxlength="20" title="Apellido Paterno" >
+                        </td>
+                        <td>
+                             <label for ="AM" style="color: white;">Apellido Materno</label>
+                            <input type="text" name="AM" id="AM" placeholder="Apellido Materno" size="15" maxlength="20" title="Apellido Materno" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for ="username" style="color: white;"> Nombre de usuario</label>
+                            <input type="text" name="username" id="username" placeholder="Nombre de usuario" size="15" maxlength="15" title="Nombre de usuario">
+                        </td>
+                        <td>
+                            <label for="pass" style="color: white;">Contraseña</label> <!-- se escribe contraseña al lado de donde va escribir-->
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña" size="20" maxlength="30"title="Contraseña">
+                        </td>
+                        <td>
+                            <label for="fechanac" style="color: white;">Fecha de registro</label>
+                            <input type="date" name="fechanac" id="fechanac"placeholder="Fecha de nacimiento" size="20"title="Fecha de nacimiento">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </br>
+            <legend style="color: white;">Datos para facturar</legend>
+            </br>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <label for="pais" style="color: white;">País</label>
+                            <select name="pais" id="pais">
+                               <option value="1" selected>Mexico</option>
+                                <option value="2">Canada</option>
+                                <option value="3">Estados Unidos</option>
+                                <option value="4">Japon</option>
+                                <option value="5">China</option>
+                                <option value="6">Colombia</option>
+                                <option value="7">Chile</option>
+                                <option value="8">Brasil</option>
+                                <option value="9">Perú</option>
+                            </select>
+                    </td>
+                    <td>
+                        <label for="ciudad" style="color: white;">Ciudad</label>
+                            <select name="ciudad" id="ciudad">
+                                <option selected>San Luis Potosi</option>
+                                <option >Vancouver</option>
+                                <option >Nueva York</option>
+                                <option >Tokio</option> 
+                                <option >Pekin</option>
+                                <option >Bogota</option>
+                                <option >Santiago</option>
+                                <option >Rio</option>
+                                <option >Lima</option>
+                            </select> 
+                     </td>
+                     <td>
+                        <label for="calle" style="color: white;">Calle</label>  
+                        <input type="text" name="calle" id="calle"placeholder="Calle" size="15" maxlength="30"title="Calle">
+                     </td>       
+                </tr>
+                <tr>
+                   <td>
+                        <label for="numero" style="color: white;">Numero de casa</label><!--es control-->
+                        <input type="number" name="numero" id="numero" placeholder="Numero de casa" size="15" maxlength="10"title="Numero de casa">
+                   </td>
+                   <td>
+                        <label for="colonia" style="color: white;">Colonia</label>
+                        <input type="text" name="colonia" id="colonia" placeholder="Colonia" size="15" maxlength="20"title="Colonia">
+                   </td>  
+                   <td>
+                        <label for="correo" style="color: white;">E-mail</label>
+                        <input type="email" name="correo" id="correo"placeholder="E-mail" size="15" maxlength="10"title="E-mail"><br/>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rfc" style="color: white;">RFC</label>
+                        <input type="text" name="rfc" id="rfc" placeholder="RFC" size="15" maxlength="30"title="RFC">
+                    </td>
+                    <td>
+                        <label for="codigo" style="color: white;">Codigo Postal</label>
+                        <input type="text" name="codigo" id="codigo" placeholder="Codigo Postal" size="15" maxlength="30"title="Codigo Postal">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="checkbox" name="acepto" id="acepto" value="1">
+            <label for="acepto" style="color: white;">Acepto terminos y condiciones</label>
+            <input type="submit" name="enviar" id="enviar" value="Enviar"><!-- sirve para enviar el formulario-->
+            <input type="reset" name="reenviar" id="reenviar" value="Restablecer"></br><!-- sirve para restablecer el formulario, el value es lo que dira el boton-->
+        </fieldset>
+    </form>
+
+</body>
+</html>

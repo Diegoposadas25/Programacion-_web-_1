@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--desarrollado por Hernández Posadas Diego Ángel 
+Fecha: 18/02/25
+practica portafolio 3-->
+<html>
+<head>
+	<meta charset="utf-8"><!--conjunto de caracteres-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--define la escala, permite el desarrollo responsivo-->
+	<title>Practic3</title>
+
+	<!--<link rel="icon" type="image/png" href="imagenes/images.png">-->
+ <style>
+ 
+ table {
+            width: 75%; 
+            border: 3px solid black; 
+            margin: auto; 
+        }
+    img {
+            width: 200px; /* width es ancho y height es alto */             
+            height: 200px;
+        }
+
+    iframe {
+            width: 350px; /*establecemos ancho y alto de iframe*/
+            height: 350px;
+           
+        }
+    </style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	 <table >
+        <thead>
+            <tr> 
+                <th><h1 style="text-align: center;">Personajes gears of war</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href ="img1.jpg" target= "ventana1"><img src="img1.jpg"></a></td> <!-- el a es para 
+                hipervinculos, el href es referencia de hipervinculo a la ruta de archivo de la imagen, el tarhet hace que la imagen 
+                e abra en el iframe con nombre de ventana1, lo siguiente es simplemente para mostrar la imagen en la tabla-->
+                <td><a href="img2.png" target= "ventana1"><img src="img2.png"></a></td>
+                <td><a href="img3.jpg"target= "ventana1"><img src="img3.jpg"></a></td>
+                <td><a href="img4.jpg" target= "ventana1"><img src="img4.jpg"></a></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div style="text-align: center;"> <!-- sirve para alinear el iframe-->
+                        <iframe src="" width="200px" height="200px" name="ventana1"></iframe>
+                    </div> 
+                </td>
+           </div> 
+        </tr>
+    </tbody>
+</table>	
+	
+</body>
+</html>
