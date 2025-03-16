@@ -1,0 +1,30 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	margin: 12px;
+	padding:0px;
+}
+li a{
+	background-color: limegreen;
+	color: white;
+	display: block; /* para agregarles un margen, el padding*/
+	padding: 16px; /* quitmos el margen para que esten juntos*/
+	text-decoration: none;
+
+}
+li a:hover{
+	background-color: darkgreen;
+	color: white;
+	display: block; /* para agregarles un margen, el padding*/
+	padding: 16px; /* quitmos el margen para que esten juntos*/
+	text-decoration: none;
+
+}
+li a:hover{
+	background-color: darkgreen;
+}
+li .activo{ /*agregamos color al primer elemeto de la lista para esonecesitamos nombrar la
+	clase en html y hacer los cambios en archivo css, tomar en cuenta los espacios*/
+	background-color: palegreen;
+	color: white;
+}
