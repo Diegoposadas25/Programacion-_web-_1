@@ -44,8 +44,6 @@ header {
   .flex-container {
     flex-direction: column; /* pones la caja en columna*/
     align-items: center;
-    justify-content: center; /* centra horizontalmente */
-  display: flex; 
   }
 }
 
