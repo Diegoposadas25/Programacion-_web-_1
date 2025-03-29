@@ -1,0 +1,51 @@
+/* Reinicio básico y estilos globales */
+/**{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;/*altura del texto, pero es la altura que hay entre el espacio y el texto*/
+}
+
+
+header {
+  padding: 25px; /*padding es el espacio que tiene un elemento*/
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+/* Flexbox: Contenedor y elementos */
+.flex-container {
+  display: flex; /*activa el modo flexible*/
+  flex-wrap: wrap;           /* Permite que los elementos se  bajen a otra línea si no caben*/
+  justify-content: center;   /* Centra horizontalmente los elementos */
+  gap: 20px;                 /* Espacio entre elementos */
+  padding: 100px;
+
+}
+
+.flex-item {
+  background-color: #e2e2e2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1 1 200px;           /* Los elementos crecerán, se encogerán y tendrán un ancho base de 200px */
+  height: 200px;
+  text-align: center;
+  justify-content: center; /* centra horizontalmente */
+  display: flex; 
+  align-items: center; /*centra verticalmente*/
+}
+@media (max-width: 600px) { /* Cuando el ancho de la pantalla sea de 600 píxeles o menos 
+(ej: celulares), aplica lo que está dentro de estas llaves {}*/
+  .flex-container {
+    flex-direction: column; /* pones la caja en columna*/
+    align-items: center;
+    justify-content: center; /* centra horizontalmente */
+  display: flex; 
+  }
+}
+
