@@ -1,0 +1,46 @@
+.contenedor {
+  position: relative; /*se posiciona en el espacio orginal del documento*/
+  background-color: gray;  /* Fondo negro */
+  padding: 20px;            /* Espacio interior para separar las capas del borde */
+  height: 230px;            
+}
+
+.capa1{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 100px;
+	left: 80px;
+	top: 10px;
+	background-color: green;
+	z-index: 1; /* determina que lemento esta encima de otro elemento*/
+}
+.capa2{
+	position: absolute; /*se posciona respecto al conteneor mas cercano*/
+	width: 100px;
+	height: 280px;
+	left: 100px;
+	background-color: red;
+	z-index: -2; /* determina que lemento esta encima de otro elemento*/
+}
+.capa3{
+	position: absolute; /*se posciona respecto al conteneor mas cercano*/
+	width: 150px;
+	height: 200px;
+	left: 140px;
+	background-color: blue;
+	top: 30px;
+	z-index: 2; /* determina que lemento esta encima de otro elemento*/
+}
+.capa4{
+	position: absolute; /*se posciona respecto al conteneor mas cercano*/
+	width: 180px;
+	height: 200px;
+	right: 880px;
+	background-color: pink;
+	top: 30px;
+	z-index: 1; /* determina que lemento esta encima de otro elemento*/
+}
+.capa5{
+	position: fixed; /*se posciona respecto a la pantalla y aunque bajes el lemento se queda ahi*/
+	border: 2px solid orange;
+}
