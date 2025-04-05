@@ -1,0 +1,40 @@
+ body {
+      margin: 0px;
+      padding: 2cm; /* Unidad absoluta */
+      background-color: lightgreen;
+    }
+
+    .container {
+      width: 80%; /* Porcentaje */
+      margin: auto; /*centrar elementos horizontalmente*/
+      padding: 2em; /*uunidad relativa quiere decir, agregar 2 veces el tamaño actual de la fuente como espacio interior por todos lados*/
+      background-color: lightsteelblue;
+      border: 2px solid black;
+    }
+
+    h1 {
+      font-size: 2rem; /* Aumentarle 2 veces el tamaño al texto que el que tenie aocmo base en html */
+      margin-bottom: 3vh; /* Altura que hay entre el elemto h1 y el elemento de abajo*/
+    }
+
+    p {
+      font-size: 1em; /* Igual al tamaño de fuente del padre */
+      margin-bottom: 3vmin; /* Tamaño mínimo entre ancho y alto del viewport */
+    }
+
+    .box {
+      width: 200px;  /* Absoluta */
+      height: 1in;   /* Absoluta en pulgadas */
+      background-color: gray;
+      margin-bottom: 4vh;
+    }
+
+    .responsive-box {
+      width: 50vw;  /* 50% del ancho del viewport */
+      height: 20vmax; /* 20% del lado más grande del viewport */
+      background-color: gray;
+      font-size: 1.5em;
+      text-align: center;
+      line-height: 20vmax;
+      color: white;
+    }
