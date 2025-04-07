@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="icon" href="img/imagen.jpg">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal LooteZone</title>
+  <link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+<body>
+  <header>
+    <h1 align="center">LooteZone</h1>
+  </header>
+  <section>
+  
+    <ul class="menu">
+      <li><a href="Inicio.html">
+        Inicio
+        </a>
+      </li>
+      <li><a href="Videojuegos.html">
+        Videojuegos
+        </a>
+      </li>
+      <li><a href="Consolas.html">
+        Consolas
+        </a>
+      </li>
+      <li><a href="Accesorios.html">
+        Accesorios
+        </a>
+      </li>
+      <li><a href="Reseñas.html">
+        Reseñas
+        </a>
+      </li>
+      <li><a href="">
+        Contactos
+        </a>
+      </li>
+    </ul>
+  
+  </section>
+
+<div >
+  <h2>Proximos estrenos de videojuegos, novedades y más</h2>
+  <img 
+    class="imagen1"
+    src="AssasinsShadows.jpg"
+    onclick="cambiarSecuencia(this)" 
+    data-indice="0" 
+    data-imagenes="AssasinsShadows.jpg,Doom.jpg,GTA6.jpg,SilentHill2.jpg,Minecraft.jpg,Metal.jpg"
+  >
+</div>
+
+   <script>
+    function cambiarSecuencia(img) {
+      const lista = img.dataset.imagenes.split(",");
+      let indice = parseInt(img.dataset.indice);
+      indice = (indice + 1) % lista.length;
+      img.src = lista[indice];
+      img.dataset.indice = indice;
+    }
+  </script>
+  <h2>Marcas de videojuegos</h2>
+  <table class="tabla">
+     <thead>
+            <tr> 
+                <th><img src="Xbox.jpg" alt="LoteZone"class="imagen"></th><!--si la imagen no se carga, mostrara lo que esta dentor del alt-->
+                <th><img src="play.jpg" alt="LoteZone"class="imagen"></th>
+                <th><img src="Nintendo.jpg" alt="LoteZone"class="imagen"></th>
+            </tr>
+        </thead>
+</table>
+</body>
+<footer>Página web desarrollada para la materia de Programación web 1</footer>
+<footer>Programación web 1</footer>
+<footer>Primavera 2025, Universidad Politecnica de San Luis Potosi</footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.095279665598!2d-100.98682832572717!3d22.12234264932419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Polit%C3%A9cnica%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses!2smx!4v1743999188177!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</html>
