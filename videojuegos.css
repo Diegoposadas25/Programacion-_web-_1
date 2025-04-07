@@ -1,16 +1,51 @@
 body{
        background-color: #1E1E1E;
 }
-.parrafo{
-color:  #f1f1f1;
-width: 300px;
+p.parrafo{
+color: white;
+text-align: center;
 }
 h1{
        color: white;
 }
 .imagen{
-  width: 300px;
-  height: 300x; 
-  margin: 10px; /* Espacio exterior */
-  padding: 5px; /* Espacio interior */
+  width: 250px;
+  height: 250x; 
+  margin: 5px; /* Espacio exterior */
+  padding: 40px; /* Espacio interior */
 }
+table{
+
+  margin-left: 260px;
+  margin-right: 0px;
+
+}
+ul{
+       list-style-type: none; /* se usa para quitar los estilos que estan por defecto*/
+       width: 20%;
+       margin: 12px;
+       padding:0px;
+       height: 100%;
+       background-color: #1f2f50;
+       position: fixed; /*para que se vea el color en toda la
+       lista de opciones*/
+}
+li a{
+       background-color: #1f2f50;
+       color: white;
+       display: block; /* para agregarles un margen, el padding*/
+       padding: 16px; /* quitmos el margen para que esten juntos*/
+       text-decoration: none; /* sirve para quitar decoraciones de textos como subrayados*/
+
+}
+li a:hover{
+       background-color: #3a5ca4;
+       color: white;
+       display: block; /* para agregarles un margen, el padding*/
+       padding: 16px; /* quitmos el margen para que esten juntos*/
+       text-decoration: none;
+
+}
+
+/* margin es fuera del borde y separa el elemento de otros elementos*/
+/* padding dentro del borde del elemento y separa el contenido del borde del mismo elemento*/

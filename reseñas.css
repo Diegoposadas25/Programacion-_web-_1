@@ -1,0 +1,46 @@
+
+.menu{
+      list-style-type: none; /*elima los estilos que tienen las listas como puntos o numeros*/
+      width: 60%; /* establece un acnho de 60%*/
+      max-width: 800px; /*limita el ancho a 800px*/
+      padding:0; /* no hay espacio adicional dentro de la lista*/
+      background-color:  #0D0D0D;
+      display: flex; /* hace que la lista sea horizontal*/
+      align-items: center;
+      margin: 20px auto; /* centra y agrega margen de 20px*/
+      /*position: fixed; para que siempre se vea la lista no imprte que te desplaces por la pantalla*/
+      /* la diferencia entre utilizar % y px es que en % se adpata a los tamaños de la pagina web y px es un tamaño fijo y no se adapta
+      al tamaño de la pagina*/
+}
+.menu li{
+      margin: 5px;
+      flex: 1 1 auto; /* Permite que los elementos se acomoden automáticamente */
+   text-align: center;
+}
+.menu li a{
+      background-color:  #0D0D0D; /* color de fondo*/
+      color:  #00FFF7; /* color de texto*/
+      display: block; /* permite que los elementos ocupen todo el ancho posible*/
+      padding: 16px; /* quitmos el margen para que esten juntos*/
+      text-decoration: none; /*elimina el subrayado prdeterimando de los enlaces*/
+      text-align: center;
+}
+.menu li a:hover{
+      background-color: #39FF14;
+      color:  #00FFF7;
+      display: block; /* permite que los elementos ocupen todo el ancho posible*/
+      padding: 16px; /* quitmos el margen para que esten juntos*/
+      text-decoration: none;  /*elimina el subrayado prdeterimando de los enlaces*/
+
+}
+body{
+       background-color: #1E1E1E;
+}
+
+h1{
+      color: white;
+}
+
+
+
+
