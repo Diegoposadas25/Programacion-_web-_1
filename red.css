@@ -1,0 +1,78 @@
+#mostrar {
+    display: none;
+}
+label[for="mostrar"] {
+		position: relative;
+    display: inline-block;
+    left: 600px;
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+label[for="mostrar"]:hover{
+		position: relative;
+    display: inline-block;
+    left: 600px;
+    background-color: black;
+    color: yellow;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+.cambio:has(label:hover) .galeria {
+  opacity: 0; /*oculta la imagen*/
+}
+
+
+.galeria{
+  position: relative; /*se posiciona en el espacio orginal del documento*/
+  background-color: orange;  /* Fondo negro */
+  padding: 20px;            /* Espacio interior para separar las capas del borde */
+  height: 230px;            
+}
+
+.red1 img{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 300px;
+	height: 300px;
+	left: 0px;
+	top: 0px; /* distancia que hay con el borde superior*/
+	border: 5px solid orangered;
+}
+.red2 img{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 300px;
+	height: 300px;
+	left: 350px;
+	top: 0px; /* distancia que hay con el borde superior*/
+	border: 5px solid orangered;
+}
+.red3 img{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 300px;
+	height: 300px;
+	right: 330px;
+	top: 0px; /* distancia que hay con el borde superior*/
+	border: 5px solid orangered;
+}
+.red4 img{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 300px;
+	height: 300px;
+	right: 0px;
+	top: 0px; /* distancia que hay con el borde superior*/
+	border: 5px solid orangered;
+}
+
+body{
+	background-color: orange;
+}
+h1, h2{
+	text-align: center;
+
