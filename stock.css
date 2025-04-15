@@ -14,11 +14,29 @@ h1{
   margin: 5px; /* Espacio exterior */
   padding: 40px; /* Espacio interior */
 }
+.imagen1{
+  width: 230px;
+  height: 290px; 
+  margin: 5px; /* Espacio exterior */
+  padding: 40px; /* Espacio interior */   
+}
+.imagen2{
+  width: 230px;
+  height: 300px; 
+  margin: 5px; /* Espacio exterior */
+  padding: 40px; /* Espacio interior */   
+}
 table{
 
   margin-left: 0px;
   margin-right: 0px;
 
+}
+ul, li{
+  text-align: center;
+  color: white;
+  list-style: none;
+  font-size: 30px;
 }
 
 
