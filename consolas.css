@@ -14,3 +14,19 @@ h1{
   margin: 10px; /* Espacio exterior */
   padding: 5px; /* Espacio interior */
 }
+.imagen1{
+  position: absolute;
+  top: 800px;
+  right: 80px;
+  width: 400px;
+  height: 500x; 
+  margin: 10px; /* Espacio exterior */
+  padding: 5px; /* Espacio interior */
+}
+.parrafo1{
+color:  #f1f1f1;
+position: absolute;
+top: 1220px;
+right: 80px;
+width: 300px;
+}
