@@ -1,0 +1,87 @@
+body{
+	background-color: royalblue;
+}
+.encuesta {
+  position: relative; /*se posiciona en el espacio orginal del documento*/
+  background-color: gray;  /* Fondo negro */
+  padding: 20px;            /* Espacio interior para separar las capas del borde */
+  height: 230px;            
+}
+
+.user{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 50px;
+	height: 10px;
+	left: 20px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.userR{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 100px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.pass{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 500px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.passR{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 580px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.carrera{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	right: 300px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.carreraR{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	right: 230px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.genero{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.generoR{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 100px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.casilla{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 550px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.casillaR{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 580px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.envio{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	right: 230px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
