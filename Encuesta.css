@@ -1,0 +1,40 @@
+body{
+       background-color: #1E1E1E;
+}
+table{
+       margin-left: 500px;
+       margin-right: 0px;
+}
+.boton{
+       margin: 30px;
+       width: 200px;
+       height: 50px;
+       background-color: #1DB954;
+       color: White;
+       text-align: Center;
+       border: none;
+}
+.boton2{
+       margin: 20px;
+       width: 200px;
+       height: 50px;
+       background-color: #1DB954;
+       color: White;
+       text-align: Center;
+       border: none;
+}
+h1{
+       color: White;
+       text-align: center;
+}
+.form{
+      margin: 30px;
+      color: White;  
+}
+.tabla2{
+        margin: auto;
+}
+.form2{
+       margin: 20px;
+       color: White;  
+}
