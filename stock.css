@@ -2,30 +2,19 @@ body{
        background-color: #1E1E1E;
 }
 p.parrafo{
-color: white;
-text-align: center;
+  color: white;
+  text-align: center;
 }
 h1{
        color: white;
 }
 .imagen{
   width: 230px;
-  height: 230x; 
+  height: 300px; 
   margin: 5px; /* Espacio exterior */
   padding: 40px; /* Espacio interior */
 }
-.imagen1{
-  width: 230px;
-  height: 290px; 
-  margin: 5px; /* Espacio exterior */
-  padding: 40px; /* Espacio interior */   
-}
-.imagen2{
-  width: 230px;
-  height: 300px; 
-  margin: 5px; /* Espacio exterior */
-  padding: 40px; /* Espacio interior */   
-}
+
 table{
 
   margin-left: 0px;
@@ -38,7 +27,9 @@ ul, li{
   list-style: none;
   font-size: 30px;
 }
-
-
+p.descuento{
+  color: green;
+  text-align: center;
+}
 /* margin es fuera del borde y separa el elemento de otros elementos*/
 /* padding dentro del borde del elemento y separa el contenido del borde del mismo elemento*/
