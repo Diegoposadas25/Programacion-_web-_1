@@ -1,11 +1,4 @@
-.imagen1 {
-  width: 800px;
-  height: 600px;
-  cursor: pointer;
-  border: 2px solid black;
-  margin: 10px auto;
-  display: block;
-}
+
 .menu{
       list-style-type: none; /*elima los estilos que tienen las listas como puntos o numeros*/
       width: 60%; /* establece un acnho de 60%*/
@@ -22,7 +15,7 @@
 .menu li{
       margin: 5px;
       flex: 1 1 auto; /* Permite que los elementos se acomoden automáticamente */
-   text-align: center;
+      text-align: center;
 }
 .menu li a{
       background-color:  #0D0D0D; /* color de fondo*/
@@ -43,13 +36,52 @@
 body{
        background-color: #1E1E1E;
 }
-.imagen{
+
+.marcas{
   width: 400px;
   height: 400px; 
   margin: 10px; /* Espacio exterior */
   padding: 5px; /* Espacio interior */
 }
-h1{
+.carrusel{
+  width: 800px;
+  height: 600px;
+  cursor: pointer;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: block;
+}
+/* Se utiliza Flexbox porque permite manejar los espacios entre elementos de forma más eficiente usando gap, 
+evitando así tener que calcular posiciones manualmente con left y right*/
+ .encabezado{
+  display: flex; /*activa el modo flexible*/
+  align-items: center; /* centra de manera vertical*/
+  flex-wrap: wrap;           /* Permite que los elementos se  bajen a otra línea si no caben*/
+  justify-content: center;   /* Centra de  manera horizontal*/
+  gap: 20px;                 /* Espacio entre elementos */
+  padding: 65px;
+  position: relative;   /*se posiciona en el espacio orginal del documento*/
+ }
+.logo{
+  width: 200px;
+  height: 200px; 
+  margin: 1px; /* Espacio exterior */
+  border: none; /* se pone para que no existan bordes*/
+  position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+  left: 20px;
+  top: 30px;
+}
+.logo1{
+  width: 200px;
+  height: 200px; 
+  margin: 1px; /* Espacio exterior */
+  border: none; /* se pone para que no existan bordes*/
+  position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+  right: 20px;
+  top: 30px;
+}
+.titulo{
+      text-align: center;
       color: white;
 }
 h2{

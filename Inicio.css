@@ -1,5 +1,5 @@
 body{
-       background-color: #1E1E1E;
+       background-color:  #1E1E1E;
 }
 .parrafo{
 color:  #f1f1f1;
@@ -10,4 +10,13 @@ padding: 40px; /* espacio entre el borde y el contenido*/
 }
 h1, h2{
        color: white;
+}
+table{
+   margin: auto; 
+}
+.imagen{
+  width: 250px;
+  height: 250px; 
+  margin: 5px; /* Espacio exterior */
+  padding: 40px; /* Espacio interior */
 }
