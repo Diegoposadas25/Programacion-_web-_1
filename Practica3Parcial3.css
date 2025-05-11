@@ -1,0 +1,163 @@
+body{
+	background-color: slategrey;
+}
+.encuesta{
+  position: relative; /*se posiciona en el espacio orginal del documento*/
+  background-color: gray;  /* Fondo negro */
+  padding: 20px;            /* Espacio interior para separar las capas del borde */
+  height: 2000px;            
+}
+.pregunta{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 1000px;
+	height: 10px;
+	left: 20px;
+	top: 10px; /* distancia que hay con el borde superior*/
+}
+.pregunta2{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 1000px;
+	height: 10px;
+	left: 20px;
+	top: 100px; /* distancia que hay con el borde superior*/
+}
+.pregunta3{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 1000px;
+	height: 10px;
+	left: 20px;
+	top: 190px; /* distancia que hay con el borde superior*/
+}
+.pregunta4{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 1000px;
+	height: 10px;
+	left: 20px;
+	top: 280px; /* distancia que hay con el borde superior*/
+}
+.pregunta5{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 1000px;
+	height: 10px;
+	left: 20px;
+	top: 370px; /* distancia que hay con el borde superior*/
+}
+.casilla{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.casilla1{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 180px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.casilla2{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 350px;
+	top: 50px; /* distancia que hay con el borde superior*/
+}
+.casilla3{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 140px;  /* distancia que hay con el borde superior*/
+}
+.casilla4{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 180px;
+	top: 140px;  /* distancia que hay con el borde superior*/
+}
+.casilla5{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 350px;
+	top: 140px;  /* distancia que hay con el borde superior*/
+}
+.casilla6{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 200px;
+	height: 10px;
+	left: 20px;
+	top: 230px; 
+}
+.casilla7{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 200px;
+	height: 10px;
+	left: 180px;
+	top: 230px; /* distancia que hay con el borde superior*/
+}
+.casilla8{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 200px;
+	height: 10px;
+	left: 350px;
+	top: 230px; /* distancia que hay con el borde superior*/
+}
+.casilla9{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 320px; /* distancia que hay con el borde superior*/
+}
+.casilla10{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 180px;
+	top: 320px; /* distancia que hay con el borde superior*/
+}
+.casilla11{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 350px;
+	top: 320px; /* distancia que hay con el borde superior*/
+}
+.casilla12{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 410px; /* distancia que hay con el borde superior*/
+}
+.casilla13{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 130px;
+	height: 10px;
+	left: 180px;
+	top: 410px; /* distancia que hay con el borde superior*/
+}
+.casilla14{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 200px;
+	height: 10px;
+	left: 350px;
+	top: 410px; /* distancia que hay con el borde superior*/
+}
+.calcular{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 450px; /* distancia que hay con el borde superior*/
+}
+.generar{
+	position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
+	width: 100px;
+	height: 10px;
+	left: 20px;
+	top: 500px; /* distancia que hay con el borde superior*/
+}
