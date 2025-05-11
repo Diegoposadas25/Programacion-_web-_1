@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Práctica 3, parcial 3</title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+	
+	<script type="text/javascript" src="Practica3Parcial3.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="Practica3Parcial3.css">
+
+</head>
+<body>
+	<h1>Formulario acerca de videojuegos</h1>
+		<form name="formulario">
+			<div class="encuesta">
+				<div class="pregunta"><legend>¿Cuál de estas marcas lleva más tiempo en el mundo de los videojuegos?</legend></div>
+				<div class="casilla"><input type="radio" name="opcion1a" id="opcion1a" value="incorrecta">Xbox</div>
+				<div class="casilla1"><input type="radio" name="opcion1b" id="opcion1b" value="incorrecta">Play Station</div>
+				<div class="casilla2"><input type="radio" name="opcion1c" id="opcion1c" value="correcta">Nintendo</div>
+				<div class="pregunta2"><legend>¿En que año se lanzo la Xbox 360?</legend></div>
+				<div class="casilla3"><input type="radio" name="opcion2a" id="opcion2a" value="incorrecta">2004</div>
+				<div class="casilla4"><input type="radio" name="opcion2b" id="opcion2b" value="correcta">2005</div>
+				<div class="casilla5"><input type="radio" name="opcion2c" id="opcion2c" value="incorrecta">2006</div>
+				<div class="pregunta3"><legend>¿Cuantas unidades vendio la Play Station 4?</legend></div>
+				<div class="casilla6"><input type="radio" name="opcion3a" id="opcion3a" value="incorrecta">120 millones</div>
+				<div class="casilla7"><input type="radio" name="opcion3b" id="opcion3b" value="incorrecta">115 millones</div>
+				<div class="casilla8"><input type="radio" name="opcion3c" id="opcion3c" value="correcta">117 millones</div>
+				<div class="pregunta4"><legend>¿Cual es la mascota iconica de Nintendo?</legend></div>
+				<div class="casilla9"><input type="radio" name="opcion4a" id="opcion4a" value="correcta">Mario Bros</div>
+				<div class="casilla10"><input type="radio" name="opcion4b" id="opcion4b" value="incorrecta">Luigi</div>
+				<div class="casilla11"><input type="radio" name="opcion4c" id="opcion4c" value="incorrecta">Kratos</div>
+				<div class="pregunta5"><legend>Uno de estos juegos es producido por Xbox Game Studios ¿cual es?</legend></div>
+				<div class="casilla12"><input type="radio" name="opcion5a" id="opcion5a" value="incorrecta">God of War</div>
+				<div class="casilla13"><input type="radio" name="opcion5b" id="opcion5b" value="correcta">Gears of War</div>
+				<div class="casilla14"><input type="radio" name="opcion5c" id="opcion5c" value="incorrecta">Red Dead Redmption 2</div>
+				<div class="calcular"><input type="button" name="envio" id="envio" value="Calcular" 
+				onclick="respuesta()"></div>
+				<div class="generar"><input type="button" value="Generar PDF" onclick="generarPDF()">
+			<div id="resultado"></div>
+  			<div id="grafico" style="width: 600px; height: 400px;"></div>
+		</form>
+  		<iframe id="visorPDF" width="700" height="800" frameborder="0" style="margin-top: 30px;"></iframe>
+  		</div>
+</body>
+</html>
