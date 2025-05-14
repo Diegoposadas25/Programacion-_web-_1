@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="preguntas.css" />
+</head>
+<body>
+  <h1>Preguntas y respuestas</h1>
+
+  <form>
+    <div class="encuesta">
+      <div class="form"><label for="comentarios">Escribe tu pregunta</label></div>
+      <div class="form">
+        <textarea name="comentarios" id="comentarios"></textarea>
+      </div>
+      <div class="boton">
+        <input type="button" class="boton-publicar" value="Publicar" onclick="comentar()" />
+      </div>
+    </div>
+  </form>
+
+  <h2>Sección de preguntas</h2>
+  <div id="lista-preguntas"></div>
+
+  <script src="preguntas.js"></script>
+</body>
+</html>
