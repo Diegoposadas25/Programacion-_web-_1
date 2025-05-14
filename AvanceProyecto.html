@@ -35,6 +35,10 @@
         Reseñas
         </a>
       </li>
+      <li><a href="Preguntas.html">
+        Ayuda
+        </a>
+      </li>
       <li><a href="Contacto.html">
         Contactos
         </a>
@@ -45,23 +49,26 @@
 
 <div>
   <h2>Proximos estrenos de videojuegos, novedades y más</h2>
-  <img 
-    class="carrusel"
-    src="AssasinsShadows.jpg"
-    onclick="cambiarSecuencia(this)" 
-    data-indice="0" 
-    data-imagenes="AssasinsShadows.jpg,Doom.jpg,GTA6.jpg,SilentHill2.jpg,Minecraft.jpg,Metal.jpg"
-  >
+   <img 
+      id="carrusel"
+      class="carrusel"
+      src="NintendoSwitch2.jpg"
+      data-indice="0"
+      data-imagenes="NintendoSwitch2.jpg,GTA6.jpg,Minecraft.jpg,Doom.jpg,expedition33.jpg,AssasinsShadows.jpg,SilentHill2.jpg,Metal.jpg"
+    >
 </div>
 
    <script>
-    function cambiarSecuencia(img) {
-      const lista = img.dataset.imagenes.split(",");
-      let indice = parseInt(img.dataset.indice);
-      indice = (indice + 1) % lista.length;
-      img.src = lista[indice];
-      img.dataset.indice = indice;
+     const carruselImg = document.getElementById("carrusel");
+    const imagenes = carruselImg.dataset.imagenes.split(",");
+    let indice = 0;
+
+    function cambiarImagen() {
+      indice = (indice + 1) % imagenes.length;
+      carruselImg.src = imagenes[indice];
     }
+
+    setInterval(cambiarImagen, 3000); // Cambiar imagen cada 3 segundos (3000 ms)
   </script>
   <h2>Marcas de videojuegos</h2>
   <table class="tabla">
@@ -73,9 +80,29 @@
             </tr>
         </thead>
 </table>
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2933817-4188QTJH3LFWGY3M/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
 </body>
-<footer>Página web desarrollada para la materia de Programación web 1</footer>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-7WUsqnmUyn2pn_fsRXtjVY9Olv8Ivk&ehbc=2E312F" width="640" height="480"></iframe>
+<footer>Página web desarrollada por Hernández Posadas Diego Angel</footer>
 <footer>Programación web 1</footer>
 <footer>Primavera 2025, Universidad Politecnica de San Luis Potosi</footer>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.095279665598!2d-100.98682832572717!3d22.12234264932419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Polit%C3%A9cnica%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses!2smx!4v1743999188177!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </html>

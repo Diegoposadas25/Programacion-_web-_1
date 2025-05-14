@@ -9,18 +9,46 @@ h1{
        color: white;
 }
 .imagen{
-  width: 230px;
-  height: 300px; 
+  width: 215px;
+  height: 290px; 
   margin: 5px; /* Espacio exterior */
   padding: 40px; /* Espacio interior */
 }
 
+.icono{
+  position: absolute;
+  top: 80px;
+  width: 10px;
+  height: 10px; 
+  margin: 10px; /* Espacio exterior */
+  padding: 10px; /* Espacio interior */
+  left: 500px;
+}
+.icono2{
+  position: absolute;
+  width: 10px;
+  height: 0px; 
+  margin: 120px; /* Espacio exterior */
+  padding: 120px; /* Espacio interior */
+  left: 200px;
+  top: 130px;
+}
+.icono3{
+  position: absolute;
+  width: 10px;
+  height: 10px; 
+  margin: 120px; /* Espacio exterior */
+  padding: 120px; /* Espacio interior */
+  left: 310px;
+  top: 400px;
+}
 table{
 
   margin-left: 0px;
   margin-right: 0px;
 
 }
+
 ul, li{
   text-align: center;
   color: white;
