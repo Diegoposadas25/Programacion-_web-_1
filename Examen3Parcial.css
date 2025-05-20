@@ -1,0 +1,29 @@
+body{
+	background-color: lightblue;
+}
+textarea {
+  width: 50%;
+  height: 10%;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.boton-publicar {
+  width: 15%;
+  height: 20%;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.encuesta{
+  display: flex; /*activa el modo flexible*/
+  flex-wrap: wrap;           /* Permite que los elementos se  bajen a otra línea si no caben*/
+  gap: 5%;                 /* Espacio entre elementos */
+
+}
