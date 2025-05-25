@@ -112,3 +112,56 @@ li a:hover {
     padding: 12px;
   }
 }
+/* Estilos base para imágenes */
+.imagen {
+  width: 235px;
+  height: 290px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Estilos para la tabla */
+.tabla {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Estilos para la sección de enlaces */
+.seccion-menu {
+  background-color: #102A57;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.seccion-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .imagen {
+    width: 90%;
+    height: auto;
+    max-width: 235px;
+  }
+
+  .tabla {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .seccion-menu a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

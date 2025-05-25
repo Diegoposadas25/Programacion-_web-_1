@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   background-color: #1E1E1E;
   margin: 0;
@@ -5,79 +6,79 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Título principal */
 h1 {
   color: white;
   text-align: center;
-  margin: 30px 0;
+  margin-top: 30px;
+  font-size: 36px;
 }
 
+/* Tabla para contener las imágenes y textos */
+.tabla {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Imagen del videojuego */
 .imagen {
-  width: 215px;
+  width: 235px;
   height: 290px;
+  margin: 10px auto;
   display: block;
   object-fit: cover;
-  margin: auto;
-  padding: 10px;
 }
 
-.parrafo {
+/* Texto debajo de las imágenes */
+p.parrafo {
   color: white;
   text-align: center;
-  font-weight: bold;
-  padding: 5px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-p.descuento {
-  color: green;
-  text-align: center;
-}
-
+/* Botón regresar opcional */
 .boton4 {
-  margin: 10px;
+  margin: 20px auto;
   width: 200px;
   height: 50px;
   background-color: darkorange;
   color: white;
-  text-align: center;
-  border: none;           /* <- elimina el borde por defecto */
-  outline: none;          /* <- elimina el borde al hacer clic (enfocado) */
   font-size: 25px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-table.tabla {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  vertical-align: top;
-  padding: 20px 10px;
   text-align: center;
+  line-height: 50px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1000px) {
-  table.tabla, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-
-  tr {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  th, td {
-    width: auto;
-    text-align: center;
+/* --- RESPONSIVO para móviles --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
   }
 
   .imagen {
-    margin: 10px auto;
+    width: 90%;
+    height: auto;
+    max-width: 235px;
+  }
+
+  .tabla {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  p.parrafo {
+    font-size: 16px;
+  }
+
+  .boton4 {
+    width: 90%;
+    font-size: 20px;
   }
 }
