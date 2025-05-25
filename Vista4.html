@@ -9,23 +9,27 @@
 <body>
 	<form name="formulario">
 		<table>
-    		<thead>
+    		<tbody>
         		<tr> 
-            		<th>
+            		<td>
                			<img src="Tomb.jpg" alt="LooteZone"class="imagen">
-            		</th>
-            		<th>
-            			<p class="parrafo">Tomb Raider<br><br><br>
-                		Plataforma: XONE<br><br><br>
-                		Precio $250</p>
-            		</th>
-            		<th>
+            		</td>
+            		<td>
+            			<p class="parrafo">Tomb Raider</p>
+                		<p class="parrafo">Plataforma: XONE</p>
+                		<p class="parrafo">Precio $250</p>
+            		</td>
+            		<td>
             			<a href="Encuesta.html">
             			 	<input class="boton" type="button" name="comprar" id="comprar" value="comprar">
                 		</a>
-            		</th>
+                		<br><br>	
+            			<a href="Videojuegos.html">
+                    		<input class="boton4" type="button" name="comprar" id="comprar" value="Regresar">
+                		</a>
+            		</td>
        			</tr>
- 			</thead>
+ 			</tbody>
  		</table>
  	</form>
  	<h1>Descripción del videojuego</h1>
@@ -95,8 +99,12 @@
        	</tbody>
  	</table>
 <h2>Video</h2>
-    <video width="640" height="360" controls>
-    <source src="SHADOW.mp4" type="video/mp4">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/zF9m91y8Na0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+	</iframe>
 </video>
 </body>
 </html>

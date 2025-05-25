@@ -19,36 +19,53 @@ p.parrafo1{
 }
 table{
 
-       margin-left: 350px;
+       margin-left: 250px;
        margin-right: 0px;
 
 }
 .boton{
-       margin: 100px; /* Espacio exterior */
+       margin: 50px; /* Espacio exterior */
        width: 200px;
        height: 50px;
        background-color: #1DB954;
        color: White;
        text-align: Center;
        border: none;
+       font-size: 25px;
+       cursor: pointer;
 }
 .boton2{
-       margin: 100px; /* Espacio exterior */
+       margin: 50px; /* Espacio exterior */
        width: 200px;
        height: 50px;
        background-color: blue;
        color: White;
        text-align: Center;
        border: none;
+       font-size: 25px;
+       cursor: pointer;
 }
 .boton3{
-       margin: 100px; /* Espacio exterior */
+       margin: 50px; /* Espacio exterior */
        width: 200px;
        height: 50px;
        background-color: red;
        color: White;
        text-align: Center;
        border: none;
+       font-size: 25px;
+       cursor: pointer;
+}
+.boton4{
+       margin: 50px; /* Espacio exterior */
+       width: 200px;
+       height: 50px;
+       background-color: darkorange;
+       color: White;
+       text-align: Center;
+       border: none;
+       font-size: 25px;
+       cursor: pointer;
 }
 h1{
        color: white;
