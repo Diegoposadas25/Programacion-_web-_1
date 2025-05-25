@@ -71,15 +71,17 @@ body {
 
 /* Carrusel */
 .carrusel {
-  width: 800px;
+  width: 100%;
   height: 600px;
-  cursor: pointer;
+  max-width: 800px;
+  aspect-ratio: 4 / 3; /* mantiene proporción uniforme */
   border: 2px solid black;
-  margin: 10px auto;
   display: block;
-  max-width: 100%;
-  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: block;
 }
+
 
 /* Imágenes de marcas */
 .marcas {

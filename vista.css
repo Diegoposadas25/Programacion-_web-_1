@@ -1,85 +1,111 @@
-body{
-       background-color: #1E1E1E;
+/* Fondo general */
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-p.parrafo{
-       color: white;
-       margin: 5px; /* Espacio exterior */
-       padding: 20px 50px; /* Espacio interior */
-}
-p.parrafo1{
-       color: white;
-       margin: 5px; /* Espacio exterior */
-       padding: 20px 100px; /* Espacio interior */
-}
-.imagen{
-       width: 250px;
-       height: 320px; 
-       margin: 5px; /* Espacio exterior */
-       padding: 40px; /* Espacio interior */
-}
-table{
 
-       margin-left: 250px;
-       margin-right: 0px;
+/* Imagen del juego */
+.imagen {
+  width: 250px;
+  height: 320px;
+  margin: 5px auto;
+  padding: 40px;
+  display: block;
+}
 
+/* Contenedor de tabla o layout */
+.tabla {
+  margin: 20px auto;
+  text-align: center;
 }
-.boton{
-       margin: 50px; /* Espacio exterior */
-       width: 200px;
-       height: 50px;
-       background-color: #1DB954;
-       color: White;
-       text-align: Center;
-       border: none;
-       font-size: 25px;
-       cursor: pointer;
+
+/* Título */
+h1, h2 {
+  color: white;
+  text-align: center;
 }
-.boton2{
-       margin: 50px; /* Espacio exterior */
-       width: 200px;
-       height: 50px;
-       background-color: blue;
-       color: White;
-       text-align: Center;
-       border: none;
-       font-size: 25px;
-       cursor: pointer;
+
+/* Texto general */
+p, ul {
+  color: white;
 }
-.boton3{
-       margin: 50px; /* Espacio exterior */
-       width: 200px;
-       height: 50px;
-       background-color: red;
-       color: White;
-       text-align: Center;
-       border: none;
-       font-size: 25px;
-       cursor: pointer;
+
+/* Párrafos principales */
+p.parrafo {
+  margin: 5px;
+  padding: 20px 50px;
 }
-.boton4{
-       margin: 50px; /* Espacio exterior */
-       width: 200px;
-       height: 50px;
-       background-color: darkorange;
-       color: White;
-       text-align: Center;
-       border: none;
-       font-size: 25px;
-       cursor: pointer;
+
+p.parrafo1 {
+  margin: 5px;
+  padding: 20px 100px;
 }
-h1{
-       color: white;
+
+/* Botones de acción */
+.boton, .boton2, .boton3, .boton4 {
+  margin: 30px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-h2{
-       color: white;
+
+.boton { background-color: #1DB954; }
+.boton2 { background-color: blue; }
+.boton3 { background-color: red; }
+.boton4 { background-color: darkorange; }
+
+/* ------------------- */
+/* RESPONSIVO MÓVIL 📱 */
+/* ------------------- */
+@media (max-width: 768px) {
+  .imagen {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tabla {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  p.parrafo, p.parrafo1 {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .boton, .boton2, .boton3, .boton4 {
+    width: 90%;
+    font-size: 20px;
+  }
 }
-p{
-       color: white;
+/* Responsividad específica para .tabla con contenido horizontal */
+@media (max-width: 768px) {
+  .tabla tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tabla td {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
-.tabla{
-       margin-left: 250px;
-       margin-right: 0px;
-}
-ul{
-      color: white; 
-}
+
