@@ -1,63 +1,83 @@
-body{
-       background-color: #1E1E1E;
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-p.parrafo{
+
+h1 {
   color: white;
   text-align: center;
+  margin: 30px 0;
 }
-h1{
-       color: white;
-}
-.imagen{
+
+.imagen {
   width: 215px;
-  height: 290px; 
-  margin: 5px; /* Espacio exterior */
-  padding: 40px; /* Espacio interior */
+  height: 290px;
+  display: block;
+  object-fit: cover;
+  margin: auto;
+  padding: 10px;
 }
 
-.icono{
-  position: absolute;
-  top: 80px;
-  width: 10px;
-  height: 10px; 
-  margin: 10px; /* Espacio exterior */
-  padding: 10px; /* Espacio interior */
-  left: 500px;
-}
-.icono2{
-  position: absolute;
-  width: 10px;
-  height: 0px; 
-  margin: 120px; /* Espacio exterior */
-  padding: 120px; /* Espacio interior */
-  left: 200px;
-  top: 130px;
-}
-.icono3{
-  position: absolute;
-  width: 10px;
-  height: 10px; 
-  margin: 120px; /* Espacio exterior */
-  padding: 120px; /* Espacio interior */
-  left: 310px;
-  top: 400px;
-}
-table{
-
-  margin-left: 0px;
-  margin-right: 0px;
-
-}
-
-ul, li{
-  text-align: center;
+.parrafo {
   color: white;
-  list-style: none;
-  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
 }
-p.descuento{
+
+p.descuento {
   color: green;
   text-align: center;
 }
-/* margin es fuera del borde y separa el elemento de otros elementos*/
-/* padding dentro del borde del elemento y separa el contenido del borde del mismo elemento*/
+
+.boton4 {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: darkorange;
+  color: white;
+  text-align: center;
+  border: none;           /* <- elimina el borde por defecto */
+  outline: none;          /* <- elimina el borde al hacer clic (enfocado) */
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  vertical-align: top;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  table.tabla, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  th, td {
+    width: auto;
+    text-align: center;
+  }
+
+  .imagen {
+    margin: 10px auto;
+  }
+}

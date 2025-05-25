@@ -1,96 +1,142 @@
-
-.menu{
-      list-style-type: none; /*elima los estilos que tienen las listas como puntos o numeros*/
-      width: 60%; /* establece un acnho de 60%*/
-      max-width: 800px; /*limita el ancho a 800px*/
-      padding:0; /* no hay espacio adicional dentro de la lista*/
-      background-color:  #0D0D0D;
-      display: flex; /* hace que la lista sea horizontal*/
-      align-items: center;
-      margin: 20px auto; /* centra y agrega margen de 20px*/
-      /*position: fixed; para que siempre se vea la lista no imprte que te desplaces por la pantalla*/
-      /* la diferencia entre utilizar % y px es que en % se adpata a los tamaños de la pagina web y px es un tamaño fijo y no se adapta
-      al tamaño de la pagina*/
-}
-.menu li{
-      margin: 5px;
-      flex: 1 1 auto; /* Permite que los elementos se acomoden automáticamente */
-      text-align: center;
-}
-.menu li a{
-      background-color:  #0D0D0D; /* color de fondo*/
-      color:  #00FFF7; /* color de texto*/
-      display: block; /* permite que los elementos ocupen todo el ancho posible*/
-      padding: 16px; /* quitmos el margen para que esten juntos*/
-      text-decoration: none; /*elimina el subrayado prdeterimando de los enlaces*/
-      text-align: center;
-}
-.menu li a:hover{
-      background-color: #39FF14;
-      color:  #00FFF7;
-      display: block; /* permite que los elementos ocupen todo el ancho posible*/
-      padding: 16px; /* quitmos el margen para que esten juntos*/
-      text-decoration: none;  /*elimina el subrayado prdeterimando de los enlaces*/
-
-}
-body{
-       background-color: #1E1E1E;
+/* Estilo base */
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.marcas{
-  width: 380px;
-  height: 380px; 
-  margin: 10px; /* Espacio exterior */
-  padding: 5px; /* Espacio interior */
+/* Menú horizontal */
+.menu {
+  list-style-type: none;
+  width: 60%;
+  max-width: 800px;
+  padding: 0;
+  background-color: #0D0D0D;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+  border-radius: 8px;
 }
-.carrusel{
+
+.menu li {
+  margin: 5px;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.menu li a {
+  background-color: #0D0D0D;
+  color: #00FFF7;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu li a:hover {
+  background-color: #39FF14;
+  color: #00FFF7;
+  text-decoration: none;
+}
+
+/* Encabezado con logo */
+.encabezado {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 65px;
+  position: relative;
+}
+
+.logo, .logo1 {
+  width: 200px;
+  height: 200px;
+  margin: 1px;
+  border: none;
+  position: absolute;
+  top: 30px;
+}
+
+.logo {
+  left: 20px;
+}
+
+.logo1 {
+  right: 20px;
+}
+
+/* Carrusel */
+.carrusel {
   width: 800px;
   height: 600px;
   cursor: pointer;
   border: 2px solid black;
   margin: 10px auto;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-/* Se utiliza Flexbox porque permite manejar los espacios entre elementos de forma más eficiente usando gap, 
-evitando así tener que calcular posiciones manualmente con left y right*/
- .encabezado{
-  display: flex; /*activa el modo flexible*/
-  align-items: center; /* centra de manera vertical*/
-  flex-wrap: wrap;           /* Permite que los elementos se  bajen a otra línea si no caben*/
-  justify-content: center;   /* Centra de  manera horizontal*/
-  gap: 20px;                 /* Espacio entre elementos */
-  padding: 65px;
-  position: relative;   /*se posiciona en el espacio orginal del documento*/
- }
-.logo{
-  width: 200px;
-  height: 200px; 
-  margin: 1px; /* Espacio exterior */
-  border: none; /* se pone para que no existan bordes*/
-  position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
-  left: 20px;
-  top: 30px;
+
+/* Imágenes de marcas */
+.marcas {
+  width: 380px;
+  height: 380px;
+  margin: 10px auto;
+  padding: 5px;
+  display: block;
 }
-.logo1{
-  width: 200px;
-  height: 200px; 
-  margin: 1px; /* Espacio exterior */
-  border: none; /* se pone para que no existan bordes*/
-  position: absolute; /*se posciona respecto al conteneor mas cercano como el relative*/
-  right: 20px;
-  top: 30px;
+
+/* Títulos y texto */
+.titulo, h2, footer, p {
+  color: white;
+  text-align: center;
 }
-.titulo{
-      text-align: center;
-      color: white;
-}
-h2{
-      text-align: center;
-      color: white;
-}
-footer{
-      color: white;
-}
-p{
-      color: white;
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu li {
+    flex: none;
+    width: 100%;
+  }
+
+  .logo,
+  .logo1 {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+  }
+
+  .encabezado {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .marcas {
+    width: 90%;
+    height: auto;
+  }
+
+  .carrusel {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo, h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

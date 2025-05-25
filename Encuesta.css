@@ -1,40 +1,66 @@
-body{
-       background-color: #1E1E1E;
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-table{
-       margin-left: 500px;
-       margin-right: 0px;
+
+h1 {
+  color: white;
+  text-align: center;
 }
-.boton{
-       margin: 30px;
-       width: 200px;
-       height: 50px;
-       background-color: #1DB954;
-       color: White;
-       text-align: Center;
-       border: none;
+
+/* Tablas centradas */
+table, .tabla2 {
+  margin: auto;
 }
-.boton2{
-       margin: 20px;
-       width: 200px;
-       height: 50px;
-       background-color: #1DB954;
-       color: White;
-       text-align: Center;
-       border: none;
+
+/* Botones */
+.boton,
+.boton2,
+.boton4 {
+  width: 200px;
+  height: 50px;
+  background-color: #1DB954;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 20px auto;
 }
-h1{
-       color: White;
-       text-align: center;
+
+/* Botón naranja específico */
+.boton4 {
+  background-color: darkorange;
+  margin: 10px auto;
 }
-.form{
-      margin: 30px;
-      color: White;  
+
+/* Formularios */
+.form,
+.form2 {
+  margin: 30px auto;
+  color: white;
+  max-width: 90%;
 }
-.tabla2{
-        margin: auto;
-}
-.form2{
-       margin: 20px;
-       color: White;  
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .boton,
+  .boton2,
+  .boton4 {
+    width: 90%; /* Más adaptativo en móviles */
+    font-size: 20px;
+  }
+
+  .form,
+  .form2 {
+    font-size: 16px;
+  }
 }

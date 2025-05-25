@@ -1,52 +1,114 @@
-body{
-       background-color: #1E1E1E;
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-p.parrafo{
-color: white;
-text-align: center;
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
-h1{
-       color: white;
+
+p.parrafo {
+  color: white;
+  text-align: center;
+  font-size: 18px;
 }
-.imagen{
+
+/* Imágenes */
+.imagen {
   width: 235px;
-  height: 300px; 
-  margin: 5px; /* Espacio exterior */
-  padding: 40px; /* Espacio interior */
+  height: 300px;
+  margin: 5px auto;
+  padding: 40px;
+  display: block;
+  object-fit: cover;
 }
 
-table{
-
+/* Tabla principal */
+table {
   margin-left: 260px;
   margin-right: 0px;
-
-}
-ul{
-       list-style-type: none; /* se usa para quitar los estilos que estan por defecto*/
-       width: 20%;
-       margin: 12px;
-       padding:0px;
-       height: 100%;
-       background-color: #1f2f50;
-       position: fixed; /*para que se vea el color en toda la
-       lista de opciones*/
-}
-li a{
-       background-color: #1f2f50;
-       color: white;
-       display: block; /* para agregarles un margen, el padding*/
-       padding: 16px; /* quitmos el margen para que esten juntos*/
-       text-decoration: none; /* sirve para quitar decoraciones de textos como subrayados*/
-
-}
-li a:hover{
-       background-color: #3a5ca4;
-       color: white;
-       display: block; /* para agregarles un margen, el padding*/
-       padding: 16px; /* quitmos el margen para que esten juntos*/
-       text-decoration: none;
-
+  padding: 20px;
 }
 
-/* margin es fuera del borde y separa el elemento de otros elementos*/
-/* padding dentro del borde del elemento y separa el contenido del borde del mismo elemento*/
+/* Menú lateral */
+ul {
+  list-style-type: none;
+  width: 20%;
+  margin: 12px 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1f2f50;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+li a {
+  background-color: #1f2f50;
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3a5ca4;
+  color: white;
+}
+
+/* Botón */
+.boton4 {
+  margin: 10px auto;
+  width: 200px;
+  height: 50px;
+  background-color: darkorange;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  /* Menú lateral colapsa arriba */
+  ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    margin-left: 0;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .imagen {
+    width: 90vw;
+    max-width: 235px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .boton4 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  p.parrafo {
+    font-size: 16px;
+  }
+
+  li a {
+    text-align: center;
+    padding: 12px;
+  }
+}
