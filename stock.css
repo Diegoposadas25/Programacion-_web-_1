@@ -1,84 +1,74 @@
-/* Estilos generales */
-body {
-  background-color: #1E1E1E;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+body{
+       background-color: #1E1E1E;
 }
-
-/* Título principal */
-h1 {
+p.parrafo{
   color: white;
   text-align: center;
-  margin-top: 30px;
-  font-size: 36px;
+}
+h1{
+       color: white;
+}
+.imagen{
+  width: 215px;
+  height: 290px; 
+  margin: 5px; /* Espacio exterior */
+  padding: 40px; /* Espacio interior */
 }
 
-/* Tabla para contener las imágenes y textos */
-.tabla {
-  width: 100%;
-  max-width: 1000px;
-  margin: 30px auto;
+.icono{
+  position: absolute;
+  top: 80px;
+  width: 10px;
+  height: 10px; 
+  margin: 10px; /* Espacio exterior */
+  padding: 10px; /* Espacio interior */
+  left: 500px;
+}
+.icono2{
+  position: absolute;
+  width: 10px;
+  height: 0px; 
+  margin: 120px; /* Espacio exterior */
+  padding: 120px; /* Espacio interior */
+  left: 200px;
+  top: 130px;
+}
+.icono3{
+  position: absolute;
+  width: 10px;
+  height: 10px; 
+  margin: 120px; /* Espacio exterior */
+  padding: 120px; /* Espacio interior */
+  left: 310px;
+  top: 400px;
+}
+table{
+
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+ul, li{
   text-align: center;
-}
-
-/* Imagen del videojuego */
-.imagen {
-  width: 235px;
-  height: 290px;
-  margin: 10px auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Texto debajo de las imágenes */
-p.parrafo {
   color: white;
+  list-style: none;
+  font-size: 30px;
+}
+p.descuento{
+  color: green;
   text-align: center;
-  font-size: 18px;
-  margin-top: 10px;
 }
-
-/* Botón regresar opcional */
-.boton4 {
-  margin: 20px auto;
-  width: 200px;
-  height: 50px;
-  background-color: darkorange;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  line-height: 50px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  text-decoration: none;
+.boton4{
+       margin: 10px; /* Espacio exterior */
+       width: 200px;
+       height: 50px;
+       background-color: darkorange;
+       color: White;
+       text-align: Center;
+       border: none;
+       font-size: 25px;
+       cursor: pointer;
 }
-
-/* --- RESPONSIVO para móviles --- */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  .imagen {
-    width: 90%;
-    height: auto;
-    max-width: 235px;
-  }
-
-  .tabla {
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-  }
-
-  p.parrafo {
-    font-size: 16px;
-  }
-
-  .boton4 {
-    width: 90%;
-    font-size: 20px;
-  }
-}
+/* margin es fuera del borde y separa el elemento de otros elementos*/
+/* padding dentro del borde del elemento y separa el contenido del borde del mismo elemento*/
