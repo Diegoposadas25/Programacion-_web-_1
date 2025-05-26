@@ -1,8 +1,9 @@
 function comentar() {
-  const comentario = document.getElementById('comentarios').value.trim();
+  const comentario = document.getElementById('comentarios').value.trim(); /*guarda variables constantes segun lo que esrbio el usario 
+  en el textArea, el .trim hace que se eliminen los espacios en blanco al principio y al final*/
   const contenedor = document.getElementById('lista-preguntas');
 
-  if (comentario === '') {
+  if (comentario === '') { /*si no se escribe ninguna pregunta lanzara este mensaje de alert*/
     alert('Por favor, escribe una pregunta antes de publicarla.');
     return;
   }
