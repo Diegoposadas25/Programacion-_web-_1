@@ -8,13 +8,13 @@
 </head>
 <body>
   <header  class="encabezado"> 
-      <img src="logo3.png" alt="LooteZone"class="logo">
+      <img src="logo3.png" alt="LooteZone"class="logo"> <!--Insertamos logos de decoración-->
       <h1 class="titulo">LootZone</h1>
       <img src="logo13.png" alt="LooteZone"class="logo1">
   </header>
   <section>
   
-    <ul class="menu">
+    <ul class="menu"> <!--Lista desordenada-->
       <li><a href="Inicio.html">
         Inicio
         </a>
@@ -41,37 +41,48 @@
 
 <div>
   <h2>Proximos estrenos de videojuegos, novedades y más</h2>
+  <!--el que esta en el src es la imagen que va primero y lo de data imagenes sera el orden en el que las corre el carrusel-->
    <img 
       id="carrusel"
       class="carrusel"
-      src="NintendoSwitch2.jpg"
+      src="NintendoSwitch2.jpg" 
       data-indice="0"
       data-imagenes="NintendoSwitch2.jpg,GTA6.jpg,Minecraft.jpg,Doom.jpg,expedition33.jpg,AssasinsShadows.jpg,SilentHill2.jpg,Metal.jpg"
     >
 </div>
-
+  <!--Definicimos un script-->
    <script>
-     const carruselImg = document.getElementById("carrusel");
-    const imagenes = carruselImg.dataset.imagenes.split(",");
-    let indice = 0;
+    const carruselImg = document.getElementById("carrusel"); /*buscamos un elemento con el id de carrusel y lo guardamos en una variable constante*/
+    const imagenes = carruselImg.dataset.imagenes.split(","); /*hace un arry List con las imagenes*/
+    let indice = 0; /*una varible que va a servir para llevar el conteo de la imagenes*/
 
     function cambiarImagen() {
-      indice = (indice + 1) % imagenes.length;
-      carruselImg.src = imagenes[indice];
+      indice = (indice + 1) % imagenes.length; /*un blucle infinito en el que las imagenes se mostraran de manera infinita ya que si por ejemplo tenemos 3 imagenes y vamos en indice 2, le sumammos 1 y tenemos 3, y en las imagenes iriamos en la tercera por lo que 3%3 es igual a 0, y el nuevo valor del indice sera 0, por lo que 0+1 renicial el bucle*/
+      carruselImg.src = imagenes[indice]; /*se asigna la imagen segun el numero que vamos en el bucle*/
     }
 
-    setInterval(cambiarImagen, 3000); // Cambiar imagen cada 3 segundos (3000 ms)
+    setInterval(cambiarImagen, 3000); // Cambiar imagen cada 3 segundos 
   </script>
   <h2>Marcas de videojuegos</h2>
-  <table class="tabla">
+  <table class="tabla"> <!--tabla sencilla para mostrar iconos de marcas-->
      <thead>
             <tr> 
-                <th><img src="Xbox.jpg" alt="LoteZone"class="marcas"></th><!--si la imagen no se carga, mostrara lo que esta dentor del alt-->
-                <th><img src="play.jpg" alt="LoteZone"class="marcas"></th>
-                <th><img src="Nintendo.jpg" alt="LoteZone"class="marcas"></th>
+                <th> <!--el a hace que la imagen enlace con un sitio web-->
+                  <a href="https://www.xbox.com/es-MX/auth/msa?action=loggedIn&locale_hint=es-MX">
+                    <img src="Xbox.jpg" alt="LoteZone"class="marcas"></th><!--si la imagen no se carga, mostrara lo que esta dentor del alt-->
+                  </a>
+                <th>
+                  <a href="https://www.playstation.com/es-mx/">
+                    <img src="play.jpg" alt="LoteZone"class="marcas"></th>
+                  </a>
+                <th>
+                  <a href="https://www.nintendo.com/es-mx/?srsltid=AfmBOoptct6RER_njO0dwEida8G1mq0x9Qe9mI1dTAF34NcsI2YqxOFF">
+                    <img src="Nintendo.jpg" alt="LoteZone"class="marcas"></th>
+                  </a>
             </tr>
         </thead>
 </table>
+<!--Código script con el chat Bot-->
 <script>
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
@@ -93,8 +104,10 @@ function initLandbot() {
 }
 </script>
 </body>
+<!--in iframe con el mapa del sitio-->
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-7WUsqnmUyn2pn_fsRXtjVY9Olv8Ivk&ehbc=2E312F" width="640" height="480"></iframe>
 <p>Correo: lootezoneoficial@gmail.com</p>
+<!--Pie de página-->
 <footer>Página web desarrollada por Hernández Posadas Diego Angel para la clase de programación web</footer>
 <footer>Programación web 1</footer>
 <footer>Primavera 2025, Universidad Politecnica de San Luis Potosi</footer>

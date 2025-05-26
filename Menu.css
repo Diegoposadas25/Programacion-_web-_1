@@ -1,41 +1,42 @@
-/* Estilo base */
+
 body {
-  background-color: #1E1E1E;
+  background-color: #1E1E1E; /*color negro de fondo*/
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /*estilo de fuente, el sans-serif es sin adornos de letra*/
 }
 
 /* Menú horizontal */
 .menu {
-  list-style-type: none;
-  width: 60%;
-  max-width: 800px;
+  list-style-type: none; /*quiatr viñetas o estilo predrinido*/
+  width: 60%; /*tamaño predefinido para la barra de listas*/
+  max-width: 800px; /*maximo de tamaño dependiendo de la ventana del navegador*/
   padding: 0;
   background-color: #0D0D0D;
-  display: flex;
-  align-items: center;
-  margin: 20px auto;
+  display: flex; /*activa el modo flexible*/
+  align-items: center; /*alinear elementos en el centro*/
+  margin: 20px auto; /*20px margen de arriba y de abajo y el auto es el margen de la izquierda y derecha*/
   flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
-  border-radius: 8px;
+  border-radius: 8px; /*borde redondo*/
 }
 
-.menu li {
+.menu li { /*estilo del menu en estado normal*/
   margin: 5px;
-  flex: 1 1 auto;
+  flex: 1 1 auto; /*Este elemento puede crecer para llenar espacio disponible, puede reducirse si no cabe, 
+  y su tamaño base es el contenido o el valor de width*/
   text-align: center;
 }
 
-.menu li a {
+.menu li a { /*estilos del menu con los enlaces puestos en modo normal*/
   background-color: #0D0D0D;
-  color: #00FFF7;
-  display: block;
-  padding: 16px;
-  text-decoration: none;
+  color: #00FFF7; /*color de fuente*/
+  display: block; /*los elementos de la lista se comportan como bloques, van a ocpuar el maximo de ancho que le digas el contenedor*/
+  padding: 16px; /*espacio interno*/
+  text-decoration: none; /*eliminar decoraciones de texto*/
   text-align: center;
 }
 
-.menu li a:hover {
+.menu li a:hover { /*hover es cuando se le pasa el mouse por encima va a pasar lo de aqui*/
   background-color: #39FF14;
   color: #00FFF7;
   text-decoration: none;
@@ -47,9 +48,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; /*espacio entre los elementos tanto en horizontal como vertical*/
   padding: 65px;
-  position: relative;
+  position: relative; /*posición padre*/
 }
 
 .logo, .logo1 {
@@ -57,8 +58,8 @@ body {
   height: 200px;
   margin: 1px;
   border: none;
-  position: absolute;
-  top: 30px;
+  position: absolute; /*posición hijo*/
+  top: 30px; /*espacio entre los elementos de arriba*/
 }
 
 .logo {
@@ -99,10 +100,10 @@ body {
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*solo aplica en pantallas de 768 pixeles o menos*/
   .menu {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column; /*cambia la dirección a vertical*/
   }
 
   .menu li {
@@ -135,7 +136,7 @@ body {
   }
 
   .titulo, h2 {
-    font-size: 20px;
+    font-size: 20px; /*tamaño de letra*/
   }
 
   p {
